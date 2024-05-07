@@ -25,4 +25,12 @@
    const chars = [ ...greeting ] // 이터레이터인 문자열을 전개 구문으로 소비하여 순회 가능 [ 'h', 'e', 'l', 'l', 'o' ]
    ```
 
-   [참고](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Iteration_protocols)
+   순회 가능이 되기위해 객체는 반드시 @@iterator 메서드를 구현해야 한다. 즉 Symbol.iterator를 통해 이용할 수 있는 @@iterator 키가 있는 속성이 있어야 한다.
+
+   ![image](https://github.com/Sellmate-Frontend-Study/mini_seminar/assets/59821075/e67690e7-d942-4aa2-a86e-a426c6add6b2)
+   ![image](https://github.com/Sellmate-Frontend-Study/mini_seminar/assets/59821075/8a4bbf85-68de-44e3-a7cf-8042fe143c40)
+
+
+
+   - [참고](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Iteration_protocols)
+   - [참고](https://poiemaweb.com/es6-iteration-for-of)
